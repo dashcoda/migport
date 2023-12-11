@@ -51,6 +51,11 @@
       <artifactId>postgresql</artifactId>
       <version>42.6.0</version>
     </dependency>
+    <dependency>
+    <groupId>io.quarkus</groupId>
+      <artifactId>quarkus-spring-data-jpa</artifactId>
+      <version>3.6.1</version>
+    </dependency>
   </dependencies>
   <build>
     <plugins>

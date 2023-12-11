@@ -7,5 +7,5 @@ INSERT INTO country VALUES
     ('country-002', '392', '+81', 'JPN', 'Japan');
 
 INSERT INTO post VALUES
-    ('post-001', 'author-001', 'Touring USA', 'Statue of Liberty is one of the symbolic architectures in modern America... '),
-    ('post-002', 'author-002', 'Best Restaurants in Japan', 'Japan has so much delicious food with high quality of service...');
+    ('post-001', 'author-001', 'Touring USA', 'Statue of Liberty is one of the symbolic architectures in America...'),
+    ('post-002', 'author-002', 'Best Restaurants in Japan', 'Japan has so much delicious food with a high quality of service...');
