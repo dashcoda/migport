@@ -8,6 +8,7 @@ import jakarta.ws.rs.Produces;
 import jakarta.ws.rs.core.MediaType;
 
 @Path("/greeting")
+@Deprecated
 public class GreetingResource {
 
     private final GreetingResourceService greetingService;

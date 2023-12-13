@@ -1,10 +1,8 @@
 package com.migport.controller;
 
-import java.util.List;
 import java.util.Optional;
 
 import com.migport.domain.author.AuthorRepository;
-// import com.migport.domain.author.AuthorService;
 import com.migport.entity.Author;
 
 import jakarta.inject.Inject;
@@ -16,11 +14,6 @@ public class AuthorController {
 
     @Inject
     AuthorRepository authorRepository;
-
-    @GET
-    public List<Author> list() {
-        return Author.listAll();
-    }
 
     @GET
     @Path("/{id}")
