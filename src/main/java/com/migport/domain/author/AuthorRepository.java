@@ -1,6 +1,12 @@
 package com.migport.domain.author;
 
-import org.springframework.data.jpa.repository.JpaRepository;
+import io.quarkus.hibernate.orm.panache.PanacheRepository;
+import jakarta.enterprise.context.ApplicationScoped;
 
-public interface AuthorRepository extends JpaRepository<AuthorEntity, String> {
+@ApplicationScoped
+public class AuthorRepository implements PanacheRepository<Author> {
+
+    public Author findByName(String name) {
+        return find("name", name).firstResult();
+    }
 }

@@ -1,4 +1,4 @@
-package com.migport.controller;
+package com.migport.resource;
 
 import com.migport.service.GreetingResourceService;
 
@@ -10,10 +10,13 @@ import jakarta.ws.rs.Produces;
 import jakarta.ws.rs.core.MediaType;
 
 @Path("/greeting")
-public class GreetingResourceController {
+public class GreetingResource {
 
-    @Inject
-    GreetingResourceService greetingService;
+    private final GreetingResourceService greetingService;
+
+    public GreetingResource(GreetingResourceService greetingService) {
+        this.greetingService = greetingService;
+    }
 
     @GET
     @Produces(MediaType.TEXT_PLAIN)

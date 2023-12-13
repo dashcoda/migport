@@ -22,7 +22,7 @@ bin/
 nb-configuration.xml
 
 # Visual Studio Code
-.vscode
+# .vscode
 .factorypath
 
 # OSX
@@ -37,7 +37,7 @@ nb-configuration.xml
 *.rej
 
 # Local environment
-.env
+# .env
 
 # Plugin directory
 /.quarkus/cli/plugins/
