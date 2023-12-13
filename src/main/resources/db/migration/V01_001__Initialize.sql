@@ -4,7 +4,7 @@ DROP TABLE IF EXISTS post;
 
 CREATE TABLE author
 (
-  id integer NOT NULL PRIMARY KEY,
+  id character(36) NOT NULL PRIMARY KEY,
 	name char(100) NOT NULL,
   email char(100) NOT NULL,
   created_date_time timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP
@@ -12,7 +12,7 @@ CREATE TABLE author
 
 CREATE TABLE country
 (
-  id integer NOT NULL PRIMARY KEY,
+  id character(36) NOT NULL PRIMARY KEY,
   code integer NOT NULL UNIQUE,
   phone_code character(36) NOT NULL UNIQUE,
 	alpha_three char(36) NOT NULL,
@@ -22,8 +22,8 @@ CREATE TABLE country
 
 CREATE TABLE post
 (
-  id integer NOT NULL PRIMARY KEY,
-  author_id integer NOT NULL REFERENCES author,
+  id character(36) NOT NULL PRIMARY KEY,
+  author_id character(36) NOT NULL REFERENCES author,
 	title char(100) NOT NULL,
   content char(200) NOT NULL,
   created_date_time timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP

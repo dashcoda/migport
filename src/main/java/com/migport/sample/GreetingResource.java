@@ -1,6 +1,4 @@
-package com.migport.resource;
-
-import com.migport.service.GreetingResourceService;
+package com.migport.sample;
 
 import jakarta.inject.Inject;
 import jakarta.ws.rs.GET;

@@ -1,4 +1,4 @@
-package com.migport.service;
+package com.migport.sample;
 
 import jakarta.enterprise.context.ApplicationScoped;
 
